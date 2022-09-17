@@ -1,0 +1,37 @@
+<!-- Сделайте простой калькулятор на 4 действия (сложение, вычитание, деление, умножение). 4 кнопки, по нажатию на которые запрашиваются два числа и выдается результат их вычисления, соответствующий действию на кнопке. -->
+<!-- Перепишите домашнее задание прошлой недели c помощью input для ввода данных и div (либо input) для вывода результата -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        main {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>Как вас зовут?<input type="text" id="name" onchange="writeName()"></div>
+        <div>Введите первое число:<input type="number" id="number1" onchange="writeNumber1()">
+
+        </div>
+        <div>Введите второе число:<input type="number" id="number2" onchange="writeNumber2()"></input></div>
+        <div id="error"></div>
+        <button onclick="calcSum()">Сложить</button>
+        <button onclick="calcSubstr()">Вычесть</button>
+        <button onclick="calcDiv()">Поделить</button>
+        <button onclick="calcMult()">Умножить</button>
+        <div id="answer"></div>
+        <script src="./index.js"></script>
+    </main>
+</body>
+
+</html>
